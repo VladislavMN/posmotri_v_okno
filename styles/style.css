@@ -49,9 +49,9 @@ ol {
 }
 
 .content__list {
-  overflow-x: hidden;
   overflow-y: auto;
   position: relative;
+  min-height: 298px;
 }
 
 .content__list-item {
@@ -59,7 +59,7 @@ ol {
 }
 
 .content__list-item:last-child {
-  margin-bottom: o;
+  margin-bottom: 0;
 }
 
 .content__details {
@@ -75,8 +75,8 @@ ol {
 }
 
 .content__video-card-thumbnail {
-  width: 194px;
-  height: 103px;
+  min-inline-size: 194px;
+  block-size: 103px;
   object-fit: cover;
 }
 
@@ -86,7 +86,7 @@ ol {
 
 .content__accent {
   color: #545050;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-size: 75px;
   font-style: normal;
   font-weight: 700;
@@ -103,7 +103,7 @@ ol {
 
 .content__video-card-title {
   color: #FFF;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -113,7 +113,7 @@ ol {
 
 .content__video-card-description {
   color: #FFF;
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -141,16 +141,13 @@ ol {
 }
 
 .result__video-container {
-  width: 711px;
-  height: 386px;
+  inline-size: 711px;
+  block-size: 386px;
   margin-bottom: 16px;
   position: relative;
 }
 
 .result__video {
-  position: absolute;
-  left: 0;
-  top: 0;
   width: inherit;
   height: inherit;
   object-fit: cover;
@@ -170,7 +167,7 @@ ol {
 
 .search-form__textfield {
   color: rgba(255, 255, 255, 0.70);
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -225,7 +222,7 @@ ol {
 
 .search-form__fieldset-title {
   color: #FFF;
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -261,7 +258,7 @@ input[type="checkbox"]:checked+.search-form__pseudo-checkbox::before {
 
 .title {
   color: #FFF;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-size: 75px;
   font-style: normal;
   font-weight: 700;
@@ -306,7 +303,7 @@ input[type="checkbox"]:checked+.search-form__pseudo-checkbox::before {
 .text_button {
   color: #FFF;
   text-align: center;
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
